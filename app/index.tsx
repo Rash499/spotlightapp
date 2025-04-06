@@ -1,5 +1,6 @@
-import { Text, View, TouchableOpacity, Pressable } from "react-native";
+import { Text, View, TouchableOpacity, Pressable, Image } from "react-native";
 import {styles} from "../styles/auth.styles"
+import { Link } from "expo-router";
 export default function Index() {
   return (
     <View style={styles.container}>
@@ -11,6 +12,10 @@ export default function Index() {
       <Pressable onPress={() => alert("Pressed!")}>
         <Text>Press Me</Text>
       </Pressable>
+
+      <Image source={require("../assets/images/favicon.png")} />
+
+      <Link href={"/notification"}> visit notification Screen </Link>
     </View>
   );
 }
