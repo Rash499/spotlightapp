@@ -8,5 +8,7 @@ export const styles = StyleSheet.create({
     title: {
         color: "red",
         fontSize: 50,
+        alignItems: "center",
+        justifyContent: "center"
     },
 })
